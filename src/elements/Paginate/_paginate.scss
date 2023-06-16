@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+.pagination-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+
+  &__item {
+    width: 26px;
+    height: 24px;
+    font-weight: 500;
+    font-size: $fs-12;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: $c-grey-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 12px 0 0;
+    transition: all 0.3s;
+    background: $c-white-4;
+    border: 1px solid $c-grey-5;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: $c-white;
+      background: $c-purple;
+    }
+
+    &.active {
+      padding: 0;
+      color: $c-white;
+      background: $c-purple;
+    }
+
+    &.arrow-icon {
+      font-weight: 500;
+      font-size: $fs-12;
+      line-height: 100%;
+
+      letter-spacing: -0.01em;
+      color: $c-grey-4;
+
+      &:hover {
+        color: $c-white;
+        background: $c-purple;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+      }
+      &.disabled:hover {
+        background: $c-white-4;
+        border: 1px solid $c-grey-5;
+        color: $c-grey-4;
+      }
+    }
+  }
+  &__item:nth-child(3) {
+    margin: 0px 9px 0 0;
+  }
+  &__item:nth-child(5) {
+    margin: 0px 11px 0 0;
+  }
+  &__dots {
+    margin: 0 12px 0 0;
+  }
+  &__item.arrow-icon.next {
+    margin: 0;
+  }
+  &__item.arrow-icon.prev {
+    margin: 0px 13px 0 0;
+  }
+}

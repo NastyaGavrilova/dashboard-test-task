@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+.tabs{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+}

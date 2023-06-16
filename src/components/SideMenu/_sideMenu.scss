@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.side-menu {
+  max-width: 306px;
+  width: 100%;
+
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+
+  background: $c-white;
+  &__wrapper {
+    height: 100vh;
+    position: relative;
+    padding: 36px 28px 76px 28px;
+  }
+  &__header {
+    margin-bottom: 53px;
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 76px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .side-menu {
+    max-width: 240px;
+    &__wrapper {
+      padding: 36px 10px 76px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .side-menu {
+    display: none;
+  }
+  .mobile-side-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    max-width: 306px;
+    width: 100%;
+    background: $c-white;
+    z-index: 2;
+    &__wrapper {
+      height: 100vh;
+      position: relative;
+      padding: 10px 19px 76px 63px;
+    }
+    &__header {
+      margin-bottom: 53px;
+    }
+    &__footer {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 76px;
+    }
+  }
+}

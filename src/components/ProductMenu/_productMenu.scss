@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.product-menu {
+  max-width: 968px;
+  width: 100%;
+
+  &__wrapper {
+    padding: 41px 0;
+  }
+  &__greetings {
+    font-weight: 500;
+    font-size: $fs-24;
+    line-height: 36px;
+    color: $c-black;
+    margin-bottom: 51px;
+  }
+  &__card {
+    background: $c-white;
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+    padding: 30px 0 40px 0;
+  }
+  &__content {
+    padding: 0 53px 0 38px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .product-menu {
+    margin: 0 auto;
+    padding: 0 20px;
+    &__container {
+      max-width: 600px;
+      width: 100%;
+      overflow: scroll;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .product-menu {
+    margin: 0 auto;
+    padding: 0 20px;
+    &__container {
+      max-width: 600px;
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .product-menu {
+    &__container {
+      max-width: 400px;
+    }
+  }
+}

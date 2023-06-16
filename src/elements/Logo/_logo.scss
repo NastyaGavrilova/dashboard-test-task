@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.logo {
+  max-width: 217px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  &__wrapper {
+    max-width: 195px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__title {
+    color: $c-black;
+    font-size: $fs-26;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  &__version {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs-10;
+    line-height: 15px;
+
+    letter-spacing: -0.01em;
+    padding-bottom: 6px;
+    color: $c-grey;
+  }
+}

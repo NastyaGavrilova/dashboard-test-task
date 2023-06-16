@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.tabs__item {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 9.2px 11px 11px;
+  background-color: $c-white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &-name {
+    font-weight: 500;
+    font-size: $fs-14;
+    line-height: 21px;
+    color: $c-menu-text;
+    letter-spacing: -0.01em;
+  }
+  &-name.active {
+    color: $c-white;
+  }
+  &-chevron {
+    stroke: $c-menu-text !important;
+  }
+  &-chevron.active {
+    stroke: $c-white !important;
+  }
+}
+.tabs__item.active {
+  background: $c-purple;
+  transition: ease-in-out 1s;
+}

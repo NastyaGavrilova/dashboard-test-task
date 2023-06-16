@@ -1,0 +1,43 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $f-base;
+
+  // custom scroll
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    z-index: 999;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: $c-white-4;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    outline: none;
+    background-color: $c-purple;
+  }
+}
+
+// icon styles
+
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+.App {
+  background: $c-white-2;
+  height: 100vh;
+}

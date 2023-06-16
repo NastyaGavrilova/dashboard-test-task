@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.table-body__cell {
+  font-weight: 500;
+  font-size: $fs-14;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: start;
+  color: $c-extra-grey;
+  padding-top: 23px;
+}
+.table-body__cell::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $c-grey-5;
+  margin-top: 24px;
+}
+.table-body__cell:first-child {
+  padding-left: 38px;
+}
+.table-body__cell-btn {
+  padding-top: 19px;
+  padding-right: 44px;
+  text-align: center;
+}
+.table-body__cell-btn::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $c-grey-5;
+  margin-top: 20px;
+}

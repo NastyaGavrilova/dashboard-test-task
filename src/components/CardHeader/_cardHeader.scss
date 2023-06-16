@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+
+.card-header {
+  padding: 0px 53px 0 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: $fs-22;
+    line-height: 33px;
+
+    letter-spacing: -0.01em;
+
+    color: $c-black;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: $fs-14;
+    line-height: 21px;
+
+    letter-spacing: -0.01em;
+
+    color: $c-green-txt;
+  }
+
+  &__search-form {
+    display: flex;
+    padding: 2px;
+    background: $c-white-3;
+    border-radius: 10px;
+    max-width: 216px;
+    height: 38px;
+  }
+  &__search-input {
+    border: none;
+    background: $c-white-3;
+    margin: 0;
+    font-size: $fs-12;
+    color: inherit;
+    border-radius: inherit;
+  }
+  &__search-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: $c-grey-3;
+  }
+  &__search-input:focus {
+    box-shadow: 0 0 3px 0 $c-purple;
+    border-color: $c-purple;
+    outline: none;
+  }
+}
+
+form.card-header__search-form {
+  border: none;
+  padding: 0;
+}
+input.card-header__search-input {
+  width: 100%;
+  padding: 12px 8px 10px 40px;
+  background: transparent url("../../assests/icons/search.svg") no-repeat 8px
+    center;
+}
+
+@media screen and (max-width: 500px) {
+  .card-header {
+    padding: 0px 25px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+}
